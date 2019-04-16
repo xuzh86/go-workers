@@ -41,8 +41,8 @@ func generateJid() string {
 }
 
 func generateProviderJobId() string {
-	u1 := uuid.Must(uuid.NewV4())
-	return fmt.Sprintf("%s", u1)
+	u2, _ := uuid.NewV4()
+	return fmt.Sprintf("%s", u2)
 }
 
 func Enqueue(queue, class string, wrapped string, args interface{}) (string, error) {
