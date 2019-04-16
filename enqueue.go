@@ -41,7 +41,7 @@ func generateJid() string {
 }
 
 func generateProviderJobId() string {
-	u2, _ := uuid.NewV4()
+	u2 := uuid.NewV4()
 	return fmt.Sprintf("%s", u2)
 }
 
