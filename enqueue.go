@@ -40,7 +40,7 @@ func generateJid() string {
 }
 
 func generateProviderJobId() string {
-	u1 := uuid.Must(uuid.NewV4())
+	u1 := Must(NewV4())
 	return fmt.Sprintf("%s", u1)
 }
 
